@@ -1,0 +1,170 @@
+<svg width="680" height="720" viewBox="0 0 680 720" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>El Boudali Zakaria — BI Analyst</title>
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="340" cy="280" r="200"/>
+    </clipPath>
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f2040"/>
+      <stop offset="100%" stop-color="#020810"/>
+    </radialGradient>
+    <radialGradient id="glowRing" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#050d1a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.35"/>
+    </radialGradient>
+    <radialGradient id="faceGrad" cx="45%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#c8956a"/>
+      <stop offset="100%" stop-color="#a07248"/>
+    </radialGradient>
+    <radialGradient id="faceShadow" cx="60%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#8a5e38" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8a5e38" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#1a0f08"/>
+      <stop offset="100%" stop-color="#0d0808"/>
+    </linearGradient>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="40%" stop-color="#050d1a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#050d1a" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="680" height="720" fill="url(#bgGrad)"/>
+
+  <!-- Grid -->
+  <g opacity="0.07" stroke="#22d3ee" stroke-width="0.5">
+    <line x1="0" y1="60"  x2="680" y2="60"/><line x1="0" y1="120" x2="680" y2="120"/>
+    <line x1="0" y1="180" x2="680" y2="180"/><line x1="0" y1="240" x2="680" y2="240"/>
+    <line x1="0" y1="300" x2="680" y2="300"/><line x1="0" y1="360" x2="680" y2="360"/>
+    <line x1="0" y1="420" x2="680" y2="420"/><line x1="0" y1="480" x2="680" y2="480"/>
+    <line x1="0" y1="540" x2="680" y2="540"/><line x1="0" y1="600" x2="680" y2="600"/>
+    <line x1="0" y1="660" x2="680" y2="660"/>
+    <line x1="60"  y1="0" x2="60"  y2="720"/><line x1="120" y1="0" x2="120" y2="720"/>
+    <line x1="180" y1="0" x2="180" y2="720"/><line x1="240" y1="0" x2="240" y2="720"/>
+    <line x1="300" y1="0" x2="300" y2="720"/><line x1="360" y1="0" x2="360" y2="720"/>
+    <line x1="420" y1="0" x2="420" y2="720"/><line x1="480" y1="0" x2="480" y2="720"/>
+    <line x1="540" y1="0" x2="540" y2="720"/><line x1="600" y1="0" x2="600" y2="720"/>
+  </g>
+
+  <!-- Glow ring -->
+  <circle cx="340" cy="280" r="215" fill="url(#glowRing)"/>
+
+  <!-- Hex frame -->
+  <polygon points="340,35 565,162 565,418 340,545 115,418 115,162" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity="0.25" stroke-dasharray="8 4"/>
+  <polygon points="340,22 578,155 578,428 340,558 102,428 102,155" fill="none" stroke="#22d3ee" stroke-width="0.7" opacity="0.1"/>
+
+  <circle cx="340" cy="280" r="205" fill="#070f1e" opacity="0.9"/>
+
+  <g clip-path="url(#circleClip)">
+    <circle cx="340" cy="280" r="205" fill="#0a1628"/>
+    <!-- Jacket -->
+    <path d="M120,520 C120,380 170,340 200,320 C230,310 260,310 270,320 L340,480 L410,320 C420,310 450,310 480,320 C510,340 560,380 560,520 Z" fill="url(#jacketGrad)"/>
+    <path d="M270,320 C270,340 300,360 340,370 C380,360 410,340 410,320 L395,345 C380,355 360,365 340,368 C320,365 300,355 285,345 Z" fill="#0a0a0a"/>
+    <path d="M310,340 C318,355 340,360 340,360 C340,360 362,355 370,340 C365,348 350,360 340,362 C330,360 315,348 310,340 Z" fill="#2a2a2a" opacity="0.7"/>
+    <!-- Neck -->
+    <rect x="315" y="310" width="50" height="45" rx="8" fill="#b8784a"/>
+    <!-- Face -->
+    <ellipse cx="340" cy="255" rx="100" ry="115" fill="url(#faceGrad)"/>
+    <ellipse cx="340" cy="255" rx="100" ry="115" fill="url(#faceShadow)"/>
+    <ellipse cx="240" cy="265" rx="14" ry="18" fill="#b8784a"/>
+    <ellipse cx="242" cy="265" rx="8"  ry="12" fill="#a0623a"/>
+    <ellipse cx="440" cy="265" rx="14" ry="18" fill="#b8784a"/>
+    <ellipse cx="438" cy="265" rx="8"  ry="12" fill="#a0623a"/>
+    <ellipse cx="340" cy="255" rx="95" ry="110" fill="#c08050"/>
+    <ellipse cx="268" cy="260" rx="35" ry="65" fill="#a06838" opacity="0.35"/>
+    <ellipse cx="395" cy="250" rx="20" ry="50" fill="#d09060" opacity="0.25"/>
+    <path d="M255,270 Q255,360 340,375 Q425,360 425,270" fill="#c08050"/>
+    <ellipse cx="340" cy="360" rx="50" ry="22" fill="#b8704a"/>
+    <!-- Nose -->
+    <ellipse cx="340" cy="285" rx="16" ry="10" fill="#a86038" opacity="0.5"/>
+    <circle  cx="328" cy="290" r="6" fill="#a06030" opacity="0.4"/>
+    <circle  cx="352" cy="290" r="6" fill="#a06030" opacity="0.4"/>
+    <path d="M330,286 Q340,295 350,286" fill="none" stroke="#8a5028" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <ellipse cx="302" cy="238" rx="18" ry="12" fill="#0d0808"/>
+    <ellipse cx="302" cy="238" rx="12" ry="9"  fill="#1a0e0a"/>
+    <circle  cx="302" cy="238" r="6"  fill="#0d0808"/>
+    <circle  cx="306" cy="234" r="2.5" fill="white" opacity="0.7"/>
+    <path d="M282,222 Q302,214 322,220" fill="none" stroke="#1a0f08" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="378" cy="238" rx="18" ry="12" fill="#0d0808"/>
+    <ellipse cx="378" cy="238" rx="12" ry="9"  fill="#1a0e0a"/>
+    <circle  cx="378" cy="238" r="6"  fill="#0d0808"/>
+    <circle  cx="382" cy="234" r="2.5" fill="white" opacity="0.7"/>
+    <path d="M358,220 Q378,213 398,220" fill="none" stroke="#1a0f08" stroke-width="5" stroke-linecap="round"/>
+    <!-- Mouth -->
+    <path d="M318,325 Q340,332 362,325" fill="#9a5030" opacity="0.8"/>
+    <path d="M320,325 Q340,335 360,325" fill="none" stroke="#7a3820" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Stubble -->
+    <ellipse cx="340" cy="340" rx="28" ry="18" fill="#1a0f08" opacity="0.45"/>
+    <ellipse cx="340" cy="328" rx="18" ry="8"  fill="#1a0f08" opacity="0.3"/>
+    <path d="M322,316 Q340,322 358,316" fill="none" stroke="#1a0f08" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    <!-- Curly hair -->
+    <ellipse cx="340" cy="160" rx="105" ry="80" fill="url(#hairGrad)"/>
+    <circle cx="248" cy="178" r="28" fill="#140a04"/>
+    <circle cx="258" cy="158" r="24" fill="#1a0f08"/>
+    <circle cx="272" cy="142" r="22" fill="#140a04"/>
+    <circle cx="268" cy="200" r="20" fill="#1a0f08"/>
+    <circle cx="255" cy="218" r="16" fill="#0d0808" opacity="0.8"/>
+    <circle cx="432" cy="178" r="28" fill="#140a04"/>
+    <circle cx="422" cy="158" r="24" fill="#1a0f08"/>
+    <circle cx="408" cy="142" r="22" fill="#140a04"/>
+    <circle cx="412" cy="200" r="20" fill="#1a0f08"/>
+    <circle cx="425" cy="218" r="16" fill="#0d0808" opacity="0.8"/>
+    <circle cx="310" cy="135" r="26" fill="#1a0f08"/>
+    <circle cx="340" cy="128" r="28" fill="#140a04"/>
+    <circle cx="370" cy="135" r="26" fill="#1a0f08"/>
+    <circle cx="325" cy="118" r="20" fill="#0d0808"/>
+    <circle cx="355" cy="116" r="20" fill="#1a0f08"/>
+    <circle cx="340" cy="108" r="18" fill="#140a04"/>
+    <path d="M245,210 Q240,250 245,290 Q250,280 258,268 Q260,255 262,235 Z" fill="#0d0808"/>
+    <path d="M435,210 Q440,250 435,290 Q430,280 422,268 Q420,255 418,235 Z" fill="#0d0808"/>
+    <rect x="120" y="350" width="440" height="160" fill="url(#bottomFade)"/>
+  </g>
+
+  <!-- Circle border -->
+  <circle cx="340" cy="280" r="205" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity="0.6"/>
+  <circle cx="340" cy="280" r="210" fill="none" stroke="#22d3ee" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Corner brackets -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7" stroke-linecap="round">
+    <polyline points="110,65 80,65 80,95"/>
+    <polyline points="570,65 600,65 600,95"/>
+    <polyline points="110,535 80,535 80,505"/>
+    <polyline points="570,535 600,535 600,505"/>
+  </g>
+
+  <!-- Data lines -->
+  <g stroke="#22d3ee" stroke-width="0.8" opacity="0.3" fill="none">
+    <polyline points="30,620 80,580 130,600 180,555 230,570"/>
+    <polyline points="450,570 500,545 550,560 600,530 650,545"/>
+  </g>
+  <circle cx="80"  cy="580" r="2.5" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="180" cy="555" r="2.5" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="500" cy="545" r="2.5" fill="#22d3ee" opacity="0.5"/>
+  <circle cx="600" cy="530" r="2.5" fill="#22d3ee" opacity="0.5"/>
+
+  <!-- Name -->
+  <text x="340" y="610" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="28" font-weight="700" fill="#e2e8f0" letter-spacing="1">EL BOUDALI ZAKARIA</text>
+
+  <!-- Title badge -->
+  <rect x="200" y="625" width="280" height="32" rx="16" fill="rgba(34,211,238,0.1)" stroke="#22d3ee" stroke-width="1" opacity="0.8"/>
+  <circle cx="218" cy="641" r="5" fill="#22d3ee" opacity="0.9"/>
+  <text x="340" y="647" text-anchor="middle" font-family="'Inter',sans-serif" font-size="13" font-weight="500" fill="#22d3ee" letter-spacing="2">BI ANALYST · JUNIOR</text>
+
+  <!-- Skill pills -->
+  <rect x="174" y="672" width="60"  height="22" rx="11" fill="none" stroke="#22d3ee" opacity="0.35"/>
+  <text x="204" y="687" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">SQL</text>
+  <rect x="244" y="672" width="76"  height="22" rx="11" fill="none" stroke="#22d3ee" opacity="0.35"/>
+  <text x="282" y="687" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">Power BI</text>
+  <rect x="330" y="672" width="56"  height="22" rx="11" fill="none" stroke="#22d3ee" opacity="0.35"/>
+  <text x="358" y="687" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">Python</text>
+  <rect x="396" y="672" width="52"  height="22" rx="11" fill="none" stroke="#22d3ee" opacity="0.35"/>
+  <text x="422" y="687" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">ETL</text>
+  <rect x="458" y="672" width="48"  height="22" rx="11" fill="none" stroke="#22d3ee" opacity="0.35"/>
+  <text x="482" y="687" text-anchor="middle" font-family="Inter,sans-serif" font-size="11" fill="#94a3b8">DAX</text>
+</svg>

@@ -1,0 +1,207 @@
+.skills-section {
+  background: var(--navy-900);
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+/* Outer wrapper for track + overflow */
+.coaster-outer {
+  position: relative;
+  margin-top: 1rem;
+  padding: 40px 0 70px;
+}
+
+/* SVG rails behind cards */
+.track-svg-wrap {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.track-svg {
+  width: 100%; height: 100%;
+}
+
+/* Horizontal scroll container */
+.coaster-track {
+  overflow-x: auto;
+  overflow-y: visible;
+  cursor: grab;
+  padding: 60px 80px 30px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(34,211,238,0.3) transparent;
+  position: relative;
+  z-index: 2;
+  -webkit-overflow-scrolling: touch;
+}
+.coaster-track:active { cursor: grabbing; }
+.coaster-track::-webkit-scrollbar { height: 4px; }
+.coaster-track::-webkit-scrollbar-track { background: transparent; }
+.coaster-track::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.25); border-radius: 2px; }
+
+.coaster-cards {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  width: max-content;
+  position: relative;
+}
+
+/* Each card wrapper (holds the wave offset) */
+.skill-card-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Track dot at card base */
+.track-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  margin-top: 8px;
+  box-shadow: 0 0 10px currentColor;
+  flex-shrink: 0;
+}
+
+/* Skill card */
+.skill-card {
+  width: 155px;
+  height: 195px;
+  background: rgba(10,22,40,0.75);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 1.3rem 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  will-change: transform;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle at 50% 0%, rgba(var(--accent-rgb, 34,211,238), 0.12), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill-card.hovered {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 20px 50px rgba(0,0,0,0.5), 0 0 30px rgba(34,211,238,0.15);
+}
+.skill-card.hovered::before { opacity: 1; }
+
+/* Front content */
+.skill-front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.skill-icon-wrap {
+  position: relative;
+  width: 54px; height: 54px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  margin-bottom: 0.2rem;
+  flex-shrink: 0;
+}
+.skill-icon { font-size: 1.7rem; line-height: 1; }
+.skill-icon-glow {
+  position: absolute; inset: -4px;
+  border-radius: 18px;
+  background: radial-gradient(circle, var(--accent, #22d3ee), transparent 70%);
+  opacity: 0.18;
+  filter: blur(6px);
+}
+
+.skill-name {
+  font-family: var(--font-display);
+  font-size: 0.9rem; font-weight: 700;
+  color: var(--white); line-height: 1.2;
+}
+.skill-category {
+  font-size: 0.65rem; font-weight: 500;
+  color: var(--text-secondary); text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.skill-bar-mini {
+  width: 100%; height: 4px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 10px; overflow: hidden;
+  margin-top: auto;
+}
+.skill-bar-fill {
+  height: 100%; border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent, #22d3ee), rgba(255,255,255,0.6));
+}
+
+.skill-level {
+  font-size: 0.72rem; font-weight: 600;
+  color: var(--accent, #22d3ee);
+}
+
+/* Hover overlay */
+.skill-hover-info {
+  position: absolute; inset: 0;
+  background: linear-gradient(160deg, rgba(10,22,40,0.97), rgba(5,13,26,0.98));
+  border-radius: 16px;
+  padding: 1.2rem 1rem;
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; gap: 0.45rem;
+  pointer-events: none;
+}
+
+.shi-icon { font-size: 1.9rem; }
+.shi-name { font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--white); }
+.shi-desc { font-size: 0.67rem; color: var(--text-secondary); line-height: 1.5; flex: 1; }
+.shi-bar {
+  width: 100%; height: 4px;
+  background: rgba(255,255,255,0.07); border-radius: 10px; overflow: hidden;
+}
+.shi-fill {
+  height: 100%; border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent, #22d3ee), rgba(255,255,255,0.5));
+  transition: width 0.6s ease;
+}
+.shi-pct { font-size: 0.72rem; font-weight: 700; color: var(--accent, #22d3ee); }
+
+/* Train */
+.train-wrap {
+  position: absolute;
+  bottom: 40px; left: 80px; right: 80px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 3;
+}
+.train {
+  position: absolute;
+  font-size: 1.4rem;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px rgba(34,211,238,0.6));
+  transition: left 0.1s linear;
+}
+
+/* Scroll hint */
+.scroll-hint {
+  position: absolute;
+  right: 2rem; bottom: 1rem;
+  display: flex; align-items: center; gap: 0.4rem;
+  font-size: 0.72rem; color: var(--text-secondary);
+  opacity: 0.7;
+  z-index: 4;
+}

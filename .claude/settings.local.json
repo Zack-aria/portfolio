@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\mjidi\\\\Desktop\\\\portfolio\\\\src\\\\components\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\mjidi\\\\Desktop\\\\portfolio\\\\public\")",
+      "Bash(Write-Output \"dirs created\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\mjidi\\\\Desktop\\\\portfolio\\\\src\\\\components\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\mjidi\\\\Desktop\\\\portfolio\\\\public\")",
+      "PowerShell(\"dirs ok\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+.navbar {
+  position: fixed; top: 0; left: 0; width: 100%;
+  z-index: 1000; padding: 1.2rem 0;
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.navbar.scrolled {
+  background: rgba(5,13,26,0.88);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(34,211,238,0.1);
+  padding: 0.75rem 0;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; }
+
+.nav-logo {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 700;
+  color: var(--white); display: flex; align-items: center; gap: 0.4rem;
+  text-decoration: none;
+}
+.logo-diamond { color: var(--cyan-400); font-size: 1.4rem; }
+.logo-dot { color: var(--cyan-400); }
+
+.nav-links { list-style: none; }
+.nav-links.desktop {
+  display: flex; align-items: center; gap: 0.2rem;
+}
+.nav-links a {
+  color: var(--text-secondary); font-size: 0.88rem; font-weight: 500;
+  padding: 0.45rem 0.85rem; border-radius: 6px;
+  transition: var(--transition); display: block; text-decoration: none;
+}
+.nav-links a:hover,
+.nav-links a.active { color: var(--cyan-400); background: rgba(34,211,238,0.07); }
+
+.nav-cta {
+  background: var(--cyan-500) !important; color: var(--navy-900) !important;
+  font-weight: 600 !important;
+}
+.nav-cta:hover { background: var(--cyan-300) !important; transform: translateY(-1px); }
+
+/* Toggle */
+.nav-toggle {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; background: none; border: none; padding: 4px;
+}
+.nav-toggle span {
+  display: block; width: 24px; height: 2px;
+  background: var(--text-primary); border-radius: 2px;
+  transition: var(--transition);
+}
+.nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+/* Mobile */
+.nav-links.mobile {
+  overflow: hidden;
+  background: rgba(5,13,26,0.96); backdrop-filter: blur(24px);
+  border-top: 1px solid rgba(34,211,238,0.1);
+  padding: 0 1.5rem; flex-direction: column; gap: 0;
+}
+.nav-links.mobile li { border-bottom: 1px solid rgba(255,255,255,0.04); }
+.nav-links.mobile a { padding: 1rem 0.5rem; font-size: 1rem; }
+
+@media (max-width: 680px) {
+  .nav-links.desktop { display: none; }
+  .nav-toggle { display: flex; }
+}

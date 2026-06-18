@@ -1,0 +1,15 @@
+.edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px,1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
+
+.edu-card { padding: 2rem; position: relative; overflow: hidden; transition: var(--transition); }
+.edu-card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: linear-gradient(180deg, var(--cyan-500), var(--cyan-300)); }
+
+.edu-badge { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.7rem; border-radius: 100px; margin-bottom: 1rem; }
+.edu-badge.ongoing { background: rgba(34,197,94,0.12); color: #4ade80; border: 1px solid rgba(34,197,94,0.2); }
+.edu-badge.done { background: rgba(148,163,184,0.1); color: var(--gray-400); border: 1px solid rgba(148,163,184,0.15); }
+
+.edu-degree { font-size: 1.02rem; font-weight: 700; color: var(--white); margin-bottom: 0.35rem; }
+.edu-school { font-size: 0.85rem; color: var(--cyan-400); margin-bottom: 0.25rem; font-weight: 500; }
+.edu-location { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.7rem; }
+.edu-years { font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.4rem; }
+.edu-years::before { content: ''; width: 12px; height: 1px; background: var(--gray-500); }
+.edu-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
